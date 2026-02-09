@@ -41,7 +41,7 @@ window.DETAIL_DATA = {
     status: "MVP 方案 C · 已确认",
     source: "来源：Prd（小红书文生图网站）.md",
     repoUrl: "https://github.com/zxc9802/xiaohongshu.git",
-    siteUrl: "https://xiaohongshu-tau.vercel.app",
+    siteUrl: "https://xiaohongshu.qyaijingxuan.top/",
     summary:
       "解决创作者把长文改写成小红书内容的高成本问题，实现自动改写、拆段、分段配图与一键打包下载。",
     positioning:
@@ -76,7 +76,7 @@ window.DETAIL_DATA = {
     source: "来源：Prd（梦境解析馆）.md",
     specialNote:
       "此项目为微信小程序，因小程序规定的类目限制，暂时无法上线并分享，但项目本身可以完整跑通。",
-    repoUrl: null,
+    repoUrl: "https://github.com/zxc9802/mengjing.git",
     siteUrl: null,
     summary:
       "用户通过沉浸式入口与 AI 占卜师进行多轮对话，系统自动生成结构化解梦报告、人格标签与艺术配图。",
