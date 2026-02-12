@@ -148,63 +148,12 @@
   );
   updateScrollVars();
 
-  // ── Custom Cursor ───────────────────────────────────
+  // ── Custom Cursor Disabled ──────────────────────────
+  // Keep native cursor to avoid cross-browser cursor disappearance.
   const cursor = document.getElementById("cursor");
   const cursorDot = document.getElementById("cursor-dot");
-
-  if (cursor && cursorDot && !prefersReducedMotion && window.matchMedia("(pointer: fine)").matches) {
-    let mouseX = -100;
-    let mouseY = -100;
-    let cursorX = -100;
-    let cursorY = -100;
-
-    window.addEventListener("pointermove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      // Dot follows instantly
-      cursorDot.style.left = mouseX + "px";
-      cursorDot.style.top = mouseY + "px";
-    }, { passive: true });
-
-    // Smooth ring follow
-    const lerp = (a, b, t) => a + (b - a) * t;
-    const animateCursor = () => {
-      cursorX = lerp(cursorX, mouseX, 0.15);
-      cursorY = lerp(cursorY, mouseY, 0.15);
-      cursor.style.left = cursorX + "px";
-      cursor.style.top = cursorY + "px";
-      requestAnimationFrame(animateCursor);
-    };
-    animateCursor();
-
-    // Hover detection for interactive elements
-    const hoverTargets = 'a, button, [role="link"], .neon-button, .project-card, .skill-pills li, .vibe-skill-card, .browser-nav a';
-
-    document.addEventListener("pointerover", (e) => {
-      if (e.target instanceof HTMLElement && e.target.closest(hoverTargets)) {
-        cursor.classList.add("cursor-hover");
-      }
-    });
-
-    document.addEventListener("pointerout", (e) => {
-      if (e.target instanceof HTMLElement && e.target.closest(hoverTargets)) {
-        cursor.classList.remove("cursor-hover");
-      }
-    });
-
-    // Hide cursor when leaving window
-    document.addEventListener("pointerleave", () => {
-      cursor.style.opacity = "0";
-      cursorDot.style.opacity = "0";
-    });
-    document.addEventListener("pointerenter", () => {
-      cursor.style.opacity = "1";
-      cursorDot.style.opacity = "1";
-    });
-  } else {
-    // No custom cursor - hide elements
-    if (cursor) cursor.style.display = "none";
-    if (cursorDot) cursorDot.style.display = "none";
-    document.body.style.cursor = "auto";
-  }
+  if (cursor) cursor.style.display = "none";
+  if (cursorDot) cursorDot.style.display = "none";
+  document.documentElement.style.cursor = "auto";
+  document.body.style.cursor = "auto";
 })();

@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>全部项目 | Vibe Coder</title>
+  <meta name="description" content="Vibe Coder 全部项目列表，按分类浏览网站与 Skill 作品。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-projects">
+  <main class="site-wrapper">
+    <section class="section reveal">
+      <div class="panel page-head">
+        <a class="back-link" href="index.html">← 返回首页</a>
+        <h1 class="page-title">全部项目</h1>
+        <p class="page-subtitle">按原始顺序展示所有网站与 Skill 项目，可按分类快速筛选。</p>
+        <div class="filter-group" role="tablist" aria-label="项目分类筛选">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">全部</button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">网站</button>
+          <button type="button" class="filter-btn" data-filter="skill" aria-pressed="false">Skill</button>
+        </div>
+        <p id="projects-count" class="projects-count"></p>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div id="projects-grid" class="card-grid projects-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Vibe Coder</p>
+  </footer>
+
+  <script src="js/detail-data.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
