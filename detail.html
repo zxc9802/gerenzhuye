@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,64 +8,68 @@
   <meta name="description" content="Vibe Coder 项目详情页">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260220-1">
 </head>
+
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <div class="background-orbs" aria-hidden="true">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-    <span class="orb orb-3"></span>
-  </div>
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <div class="logo">Vibe Coder</div>
+      <nav aria-label="主导航">
+        <a href="index.html#skills">工具</a>
+        <a href="index.html#projects">产品</a>
+        <a href="index.html#skill-projects">Skill</a>
+      </nav>
+    </div>
+  </header>
 
-  <main class="site-wrapper detail-main">
-    <section class="section reveal">
-      <div class="detail-shell glass-panel">
-        <a class="back-link" href="index.html">← 返回主页</a>
-        <p id="detail-category" class="detail-category"></p>
-        <h1 id="detail-title" class="detail-title"></h1>
-        <p id="detail-tagline" class="detail-tagline"></p>
+  <main class="site-wrapper detail-main container section">
+    <div class="detail-header reveal">
+      <a class="back-link" href="index.html">← 返回主页</a>
+      <p id="detail-category" class="detail-category"></p>
+      <h1 id="detail-title" class="detail-title"></h1>
+      <p id="detail-tagline" class="detail-tagline"></p>
 
-        <div id="detail-special-note" class="detail-special-note" hidden></div>
-        <div id="detail-links" class="detail-links"></div>
-      </div>
-    </section>
+      <div id="detail-special-note" class="detail-special-note" hidden></div>
+      <div id="detail-links" class="detail-links"></div>
+    </div>
 
-    <section class="section reveal">
-      <div class="detail-content-grid">
-        <article class="detail-card glass-panel">
-          <h2>项目概述</h2>
-          <p id="detail-summary"></p>
-          <p id="detail-positioning"></p>
-        </article>
+    <div class="detail-content-grid reveal">
+      <article class="detail-card card tilt-card">
+        <h2>项目概述</h2>
+        <p id="detail-summary"></p>
+        <p id="detail-positioning"></p>
+      </article>
 
-        <article class="detail-card glass-panel">
-          <h2>核心模块</h2>
-          <ul id="detail-modules"></ul>
-        </article>
+      <article class="detail-card card tilt-card">
+        <h2>核心模块</h2>
+        <ul id="detail-modules" class="detail-list"></ul>
+      </article>
 
-        <article class="detail-card glass-panel">
-          <h2>关键流程</h2>
-          <ol id="detail-flow"></ol>
-        </article>
+      <article class="detail-card card tilt-card">
+        <h2>关键流程</h2>
+        <ol id="detail-flow" class="detail-list"></ol>
+      </article>
 
-        <article class="detail-card glass-panel">
-          <h2>技术与产出</h2>
-          <ul id="detail-stack"></ul>
-        </article>
-      </div>
-    </section>
+      <article class="detail-card card tilt-card">
+        <h2>技术与产出</h2>
+        <ul id="detail-stack" class="detail-list"></ul>
+      </article>
+    </div>
   </main>
 
-  <footer class="footer reveal">
-    <div class="footer-inner glass-panel">
-      <p class="copyright">© <span id="year"></span> Vibe Coder</p>
+  <footer class="footer">
+    <div class="container container-inner">
+      <p class="copyright">© <span id="year"></span> Vibe Coder. Built with AI.</p>
     </div>
   </footer>
 
   <script src="js/detail-data.js"></script>
   <script src="js/detail.js"></script>
-  <script src="js/particles.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20260220-1"></script>
 </body>
+
 </html>

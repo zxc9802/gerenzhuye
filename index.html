@@ -1,306 +1,365 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vibe Coder | 个人主页</title>
   <meta name="description" content="Vibe Coder 个人主页：展示 AI Coding 工具熟练度与项目成果。">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20260212-3">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260220-1">
 </head>
+
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <div class="background-orbs" aria-hidden="true">
-    <span class="orb orb-1"></span>
-    <span class="orb orb-2"></span>
-    <span class="orb orb-3"></span>
-  </div>
+  <header class="top-nav">
+    <div class="container nav-inner">
+      <div class="logo">Vibe Coder</div>
+      <nav aria-label="主导航">
+        <a href="#skills">工具</a>
+        <a href="#projects">产品</a>
+        <a href="#skill-projects">Skill</a>
+      </nav>
+    </div>
+  </header>
 
   <main class="site-wrapper">
+    <!-- Hero -->
     <section id="hero" class="section hero reveal">
-      <div class="browser-frame glass-panel">
-        <div class="browser-toolbar">
-          <div class="window-controls" aria-hidden="true">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
+      <p class="hero-kicker">Hello, I'm Vibe Coder 👋</p>
+      <h1 class="hero-title">VIBE CODING</h1>
+      <p class="hero-subtitle">
+        我是 Vibe Coding 狂热爱好者，已开发十余款可落地并上线的产品与 Skill，
+        专注用 AI 驱动高效开发与快速验证。
+      </p>
+
+      <ul class="skill-pills" aria-label="核心技能标签">
+        <li>Claude Code</li>
+        <li>Codex</li>
+        <li>Antigravity</li>
+        <li>Cursor</li>
+        <li>Trea</li>
+        <li>秒哒</li>
+        <li>Git</li>
+        <li>RAG</li>
+        <li>Transformer</li>
+        <li>OpenClaw</li>
+        <li>Next.js</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <!-- Skills (Tools) -->
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title">工具熟练度</h2>
+      <p class="section-subtitle">每个工具都有明确定位：主力开发、修复细节、额度协同与小项目快启。</p>
+      <div class="tools-grid">
+        <article class="skill-row card tilt-card" data-level="90">
+          <div class="skill-meta">
+            <div class="skill-name"><span class="skill-mark">CC</span>Claude Code</div>
+            <span class="skill-value">90%</span>
           </div>
-          <nav class="browser-nav" aria-label="主导航">
-            <a href="#projects">产品</a>
-            <a href="#skill-projects">Skill</a>
-          </nav>
-        </div>
-
-        <div class="hero-inner">
-          <p class="hero-kicker">Vibe Coder Portfolio</p>
-          <h1 class="hero-title">VIBE CODING</h1>
-          <p id="about" class="hero-subtitle">
-            我是 Vibe Coding 狂热爱好者，已开发十余款可落地并上线的产品与 Skill，
-            专注用 AI 驱动高效开发与快速验证。
-          </p>
-
-          <ul class="skill-pills" aria-label="核心技能标签">
-            <li>Claude Code</li>
-            <li>Codex</li>
-            <li>Antigravity</li>
-            <li>Cursor</li>
-            <li>Trea</li>
-            <li>秒哒</li>
-            <li>Git</li>
-            <li>RAG</li>
-            <li>Transformer</li>
-            <li>OpenClaw</li>
-            <li>Next.js</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Python</li>
-          </ul>
-
-          <div class="hero-preview-grid">
-            <article class="preview-card tilt-card">
-              <img src="assets/designs/homepage_projects_1770565032835.png" alt="网站项目卡片设计预览" loading="lazy">
-            </article>
-            <article class="preview-card tilt-card">
-              <img src="assets/designs/homepage_hero_1770565079736.png" alt="首页 Hero 设计预览" loading="lazy">
-            </article>
-            <article class="preview-card tilt-card">
-              <img src="assets/designs/tools_proficiency_1770565097498.png" alt="工具熟练度设计预览" loading="lazy">
-            </article>
+          <p class="skill-feature">最常用主力工具，从产品规划到代码落地全流程使用。</p>
+          <div class="progress-track">
+            <div class="progress-fill"></div>
           </div>
-        </div>
+        </article>
+
+        <article class="skill-row card tilt-card" data-level="65">
+          <div class="skill-meta">
+            <div class="skill-name"><span class="skill-mark">CX</span>Codex</div>
+            <span class="skill-value">65%</span>
+          </div>
+          <p class="skill-feature">主要用于修 Bug、细节打磨和已有项目的结构调整。</p>
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+        </article>
+
+        <article class="skill-row card tilt-card" data-level="55">
+          <div class="skill-meta">
+            <div class="skill-name"><span class="skill-mark">AG</span>Antigravity</div>
+            <span class="skill-value">55%</span>
+          </div>
+          <p class="skill-feature">作为额度协同工具使用，常与 Claude Code 配合提高持续开发时长。</p>
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+        </article>
+
+        <article class="skill-row card tilt-card" data-level="50">
+          <div class="skill-meta">
+            <div class="skill-name"><span class="skill-mark">CU</span>Cursor</div>
+            <span class="skill-value">50%</span>
+          </div>
+          <p class="skill-feature">用于快速补全、局部试验与中小规模页面重构。</p>
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+        </article>
+
+        <article class="skill-row card tilt-card" data-level="45">
+          <div class="skill-meta">
+            <div class="skill-name"><span class="skill-mark">TR</span>Trea</div>
+            <span class="skill-value">45%</span>
+          </div>
+          <p class="skill-feature">适合快速起小项目、验证创意与低成本 MVP 实验。</p>
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+        </article>
+
+        <article class="skill-row card tilt-card" data-level="40">
+          <div class="skill-meta">
+            <div class="skill-name"><span class="skill-mark">SD</span>秒哒</div>
+            <span class="skill-value">40%</span>
+          </div>
+          <p class="skill-feature">轻量化场景与短周期项目开发，强调快速成型。</p>
+          <div class="progress-track">
+            <div class="progress-fill"></div>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="skills" class="section reveal">
-      <div class="tools-panel glass-panel">
-        <h2 class="section-title">工具熟练度</h2>
-        <p class="tools-caption">每个工具都有明确定位：主力开发、修复细节、额度协同与小项目快启。</p>
-        <div class="skill-list">
-          <article class="skill-row" data-level="90">
-            <div class="skill-meta">
-              <div class="skill-name"><span class="skill-mark">CC</span>Claude Code</div>
-              <span class="skill-value">90%</span>
-            </div>
-            <p class="skill-feature">最常用主力工具，从产品规划到代码落地全流程使用。</p>
-            <div class="progress-track"><div class="progress-fill"></div></div>
-          </article>
+    <!-- Web Projects -->
+    <section id="projects" class="section container reveal">
+      <h2 class="section-title">网站代表作品</h2>
+      <p class="section-subtitle">AI 驱动落地的 Web 端产品与工具集。</p>
 
-          <article class="skill-row" data-level="65">
-            <div class="skill-meta">
-              <div class="skill-name"><span class="skill-mark">CX</span>Codex</div>
-              <span class="skill-value">65%</span>
-            </div>
-            <p class="skill-feature">主要用于修 Bug、细节打磨和已有项目的结构调整。</p>
-            <div class="progress-track"><div class="progress-fill"></div></div>
-          </article>
-
-          <article class="skill-row" data-level="55">
-            <div class="skill-meta">
-              <div class="skill-name"><span class="skill-mark">AG</span>Antigravity</div>
-              <span class="skill-value">55%</span>
-            </div>
-            <p class="skill-feature">作为额度协同工具使用，常与 Claude Code 配合提高持续开发时长。</p>
-            <div class="progress-track"><div class="progress-fill"></div></div>
-          </article>
-
-          <article class="skill-row" data-level="50">
-            <div class="skill-meta">
-              <div class="skill-name"><span class="skill-mark">CU</span>Cursor</div>
-              <span class="skill-value">50%</span>
-            </div>
-            <p class="skill-feature">用于快速补全、局部试验与中小规模页面重构。</p>
-            <div class="progress-track"><div class="progress-fill"></div></div>
-          </article>
-
-          <article class="skill-row" data-level="45">
-            <div class="skill-meta">
-              <div class="skill-name"><span class="skill-mark">TR</span>Trea</div>
-              <span class="skill-value">45%</span>
-            </div>
-            <p class="skill-feature">适合快速起小项目、验证创意与低成本 MVP 实验。</p>
-            <div class="progress-track"><div class="progress-fill"></div></div>
-          </article>
-
-          <article class="skill-row" data-level="40">
-            <div class="skill-meta">
-              <div class="skill-name"><span class="skill-mark">SD</span>秒哒</div>
-              <span class="skill-value">40%</span>
-            </div>
-            <p class="skill-feature">轻量化场景与短周期项目开发，强调快速成型。</p>
-            <div class="progress-track"><div class="progress-fill"></div></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section reveal">
-      <div class="project-shell glass-panel">
-        <div class="project-shell-header">
-          <h2 class="section-title section-title-en">网站代表作品</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card tilt-card" data-link="detail.html?item=web-realstate" role="link" tabindex="0" aria-label="查看 RealState AI 售房网站详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8.5Z"/><path d="M10 10h4"/></svg>
-            </div>
+      <div class="project-grid">
+        <a href="detail.html?item=web-realstate" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-8.5Z" />
+              <path d="M10 10h4" />
+            </svg>
+          </div>
+          <div>
             <h3>RealState AI 售房网站</h3>
             <p>AI 视觉分析生成房产文案</p>
-            <a class="neon-button" href="detail.html?item=web-realstate">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=web-xhs" role="link" tabindex="0" aria-label="查看小红书文生图详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4"/><path d="M8 12h8M8 16h8"/></svg>
-            </div>
+        <a href="detail.html?item=web-xhs" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 3h10l4 4v14H5z" />
+              <path d="M15 3v4h4" />
+              <path d="M8 12h8M8 16h8" />
+            </svg>
+          </div>
+          <div>
             <h3>小红书文生图</h3>
             <p>长文一键转小红书图文</p>
-            <a class="neon-button" href="detail.html?item=web-xhs">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=web-dream" role="link" tabindex="0" aria-label="查看梦境聊天馆详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z"/><path d="M12 8v4l3 2"/><path d="M8 4 6.5 2.5M16 4l1.5-1.5"/></svg>
-            </div>
+        <a href="detail.html?item=web-dream" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0Z" />
+              <path d="M12 8v4l3 2" />
+              <path d="M8 4 6.5 2.5M16 4l1.5-1.5" />
+            </svg>
+          </div>
+          <div>
             <h3>梦境聊天馆</h3>
             <p>语音对话 AI 解梦</p>
-            <a class="neon-button" href="detail.html?item=web-dream">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=web-debate" role="link" tabindex="0" aria-label="查看历史名人辩论详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="m8 4-4 8 4 8M16 4l4 8-4 8"/><path d="M11 7h2v10h-2z"/></svg>
-            </div>
+        <a href="detail.html?item=web-debate" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="m8 4-4 8 4 8M16 4l4 8-4 8" />
+              <path d="M11 7h2v10h-2z" />
+            </svg>
+          </div>
+          <div>
             <h3>历史名人辩论</h3>
             <p>AI 控制名人趣味辩论</p>
-            <a class="neon-button" href="detail.html?item=web-debate">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=web-recipe" role="link" tabindex="0" aria-label="查看创意食谱 H5 详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 0 1 12 0v2a6 6 0 0 1-12 0Z"/><path d="M8 15c0 3 2 5 4 5s4-2 4-5"/><path d="M4 10h16"/></svg>
-            </div>
+        <a href="detail.html?item=web-recipe" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 9a6 6 0 0 1 12 0v2a6 6 0 0 1-12 0Z" />
+              <path d="M8 15c0 3 2 5 4 5s4-2 4-5" />
+              <path d="M4 10h16" />
+            </svg>
+          </div>
+          <div>
             <h3>创意食谱 H5</h3>
             <p>AI 评分 + 生成菜品效果图</p>
-            <a class="neon-button" href="detail.html?item=web-recipe">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=web-couple" role="link" tabindex="0" aria-label="查看甜蜜时光情侣空间详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.35-9.33-8.1C.91 10.09 2.22 6 5.9 6A5.5 5.5 0 0 1 12 9a5.5 5.5 0 0 1 6.1-3c3.68 0 4.99 4.09 3.23 6.9C19 16.65 12 21 12 21Z"/></svg>
-            </div>
+        <a href="detail.html?item=web-couple" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 21s-7-4.35-9.33-8.1C.91 10.09 2.22 6 5.9 6A5.5 5.5 0 0 1 12 9a5.5 5.5 0 0 1 6.1-3c3.68 0 4.99 4.09 3.23 6.9C19 16.65 12 21 12 21Z" />
+            </svg>
+          </div>
+          <div>
             <h3>甜蜜时光情侣空间</h3>
             <p>情侣生活记录 + AI 生图</p>
-            <a class="neon-button" href="detail.html?item=web-couple">查看详情</a>
-          </article>
-        </div>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
       </div>
     </section>
 
-    <section id="skill-projects" class="section reveal">
-      <div class="project-shell glass-panel">
-        <div class="project-shell-header">
-          <h2 class="section-title section-title-en">Skill 代表作品</h2>
-        </div>
+    <!-- Skill Projects -->
+    <section id="skill-projects" class="section container reveal">
+      <h2 class="section-title">Skill 代表作品</h2>
+      <p class="section-subtitle">基于各平台的定制化 AI 工作流与提效插件。</p>
 
-        <div class="project-grid">
-          <article class="project-card tilt-card" data-link="detail.html?item=skill-remotion" role="link" tabindex="0" aria-label="查看 Remotion 视频创作详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 7h14v10H5z"/><path d="m10 10 5 2-5 2z"/><path d="M5 17h14"/></svg>
-            </div>
+      <div class="project-grid">
+        <a href="detail.html?item=skill-remotion" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 7h14v10H5z" />
+              <path d="m10 10 5 2-5 2z" />
+              <path d="M5 17h14" />
+            </svg>
+          </div>
+          <div>
             <h3>Remotion 视频创作</h3>
             <p>React 程序化视频生成</p>
-            <a class="neon-button" href="detail.html?item=skill-remotion">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=skill-wechatlog" role="link" tabindex="0" aria-label="查看微信群聊智能分析详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H9l-5 3V5Z"/><path d="M8 9h8M8 12h6"/></svg>
-            </div>
+        <a href="detail.html?item=skill-wechatlog" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 5h16v11H9l-5 3V5Z" />
+              <path d="M8 9h8M8 12h6" />
+            </svg>
+          </div>
+          <div>
             <h3>微信群聊智能分析</h3>
             <p>自动分析并生成 HTML 报告</p>
-            <a class="neon-button" href="detail.html?item=skill-wechatlog">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=skill-weibo" role="link" tabindex="0" aria-label="查看微博热搜创意猎手详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 12c0-4 3-7 7-7h2c4 0 7 3 7 7s-3 7-7 7h-2c-4 0-7-3-7-7Z"/><path d="M8 12h8"/><path d="M10 9h4"/></svg>
-            </div>
+        <a href="detail.html?item=skill-weibo" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 12c0-4 3-7 7-7h2c4 0 7 3 7 7s-3 7-7 7h-2c-4 0-7-3-7-7Z" />
+              <path d="M8 12h8" />
+              <path d="M10 9h4" />
+            </svg>
+          </div>
+          <div>
             <h3>微博热搜创意猎手</h3>
             <p>从热点中挖掘产品机会</p>
-            <a class="neon-button" href="detail.html?item=skill-weibo">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=skill-youtube" role="link" tabindex="0" aria-label="查看 YouTube 内容自动化详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M20 8.5a2 2 0 0 0-1.4-1.4C17.3 6.7 12 6.7 12 6.7s-5.3 0-6.6.4A2 2 0 0 0 4 8.5 20 20 0 0 0 3.7 12c0 1.2 0 2.4.3 3.5a2 2 0 0 0 1.4 1.4c1.3.4 6.6.4 6.6.4s5.3 0 6.6-.4a2 2 0 0 0 1.4-1.4c.2-1.1.3-2.3.3-3.5 0-1.2-.1-2.4-.3-3.5Z"/><path d="m10 10 5 2-5 2z"/></svg>
-            </div>
+        <a href="detail.html?item=skill-youtube" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M20 8.5a2 2 0 0 0-1.4-1.4C17.3 6.7 12 6.7 12 6.7s-5.3 0-6.6.4A2 2 0 0 0 4 8.5 20 20 0 0 0 3.7 12c0 1.2 0 2.4.3 3.5a2 2 0 0 0 1.4 1.4c1.3.4 6.6.4 6.6.4s5.3 0 6.6-.4a2 2 0 0 0 1.4-1.4c.2-1.1.3-2.3.3-3.5 0-1.2-.1-2.4-.3-3.5Z" />
+              <path d="m10 10 5 2-5 2z" />
+            </svg>
+          </div>
+          <div>
             <h3>YouTube 内容自动化</h3>
             <p>抓取、转录、改写全流程</p>
-            <a class="neon-button" href="detail.html?item=skill-youtube">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=skill-wechat-article" role="link" tabindex="0" aria-label="查看微信公众号 AI 写作详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h6"/></svg>
-            </div>
+        <a href="detail.html?item=skill-wechat-article" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 4h14v16H5z" />
+              <path d="M8 8h8M8 12h8M8 16h6" />
+            </svg>
+          </div>
+          <div>
             <h3>微信公众号 AI 写作</h3>
             <p>从选题到发布自动化</p>
-            <a class="neon-button" href="detail.html?item=skill-wechat-article">查看详情</a>
-          </article>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
 
-          <article class="project-card tilt-card" data-link="detail.html?item=skill-algorithm-tamer" role="link" tabindex="0" aria-label="查看算法驯化器详情">
-            <div class="project-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h10M4 17h16"/><path d="M17 12l2 2 3-3"/></svg>
-            </div>
+        <a href="detail.html?item=skill-algorithm-tamer" class="project-card card tilt-card" aria-label="查看详情">
+          <div class="project-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 7h16M4 12h10M4 17h16" />
+              <path d="M17 12l2 2 3-3" />
+            </svg>
+          </div>
+          <div>
             <h3>算法驯化器</h3>
             <p>AI 诊断与推荐算法训练策略</p>
-            <a class="neon-button" href="detail.html?item=skill-algorithm-tamer">查看详情</a>
-          </article>
-        </div>
+          </div>
+          <span class="btn-primary">查看详情 &rarr;</span>
+        </a>
       </div>
     </section>
-  </main>
 
-  <footer id="vibe-skills" class="footer reveal">
-    <div class="footer-inner glass-panel">
-      <h2 class="section-title section-title-en">VIBE CODING 技能档案</h2>
-      <p class="vibe-intro">基于个人技能文档提炼的核心能力与开发方法论。</p>
+    <!-- Vibe Skills Archive -->
+    <section class="section container reveal">
+      <h2 class="section-title">VIBE CODING 技能档案</h2>
+      <p class="section-subtitle">基于个人技能文档提炼的核心能力与开发方法论。</p>
 
       <div class="vibe-skill-grid">
-        <article class="vibe-skill-card">
+        <article class="vibe-skill-card card tilt-card">
           <h3>01. 项目规划提示词体系</h3>
           <p>固定流程：功能规划 → UI 规划 → 版本规划 → 架构设计蓝图 → PRD 文档生成。</p>
         </article>
 
-        <article class="vibe-skill-card">
+        <article class="vibe-skill-card card tilt-card">
           <h3>02. Git 实战能力</h3>
           <p>熟练使用版本快照、历史追踪与指定提交回滚，支持项目协作与 GitHub 仓库管理。</p>
-          <code>git commit -m "0.1.0 ..." / git log --oneline / git reset --hard &lt;hash&gt;</code>
+          <code>git reset --hard &lt;hash&gt;</code>
         </article>
 
-        <article class="vibe-skill-card">
+        <article class="vibe-skill-card card tilt-card">
           <h3>03. RAG 认知与切片</h3>
           <p>理解 RAG 工作机理与内容切片策略，能为知识检索和问答提供可落地结构。</p>
         </article>
 
-        <article class="vibe-skill-card">
+        <article class="vibe-skill-card card tilt-card">
           <h3>04. Transformer 原理理解</h3>
           <p>理解注意力机制与基本架构，对 AI 产品设计和提示词工程具备模型层判断能力。</p>
         </article>
 
-        <article class="vibe-skill-card">
+        <article class="vibe-skill-card card tilt-card">
           <h3>05. OpenClaw 移动端实践</h3>
           <p>在手机端通过 OpenClaw 持续体验并测试 Skill，验证工具在多端场景下的可用性。</p>
         </article>
       </div>
+    </section>
+  </main>
 
-      <p class="copyright">© <span id="year"></span> Vibe Coder</p>
+  <footer class="footer">
+    <div class="container container-inner">
+      <p class="copyright">© <span id="year"></span> Vibe Coder. Built with AI.</p>
     </div>
   </footer>
 
-  <script src="js/particles.js?v=20260212-3"></script>
-  <script src="js/main.js?v=20260212-3"></script>
+  <script src="js/main.js?v=20260220-1"></script>
 </body>
+
 </html>
