@@ -92,6 +92,40 @@ h3,
   color: var(--accent);
 }
 
+/* VPN Banner */
+.vpn-banner {
+  background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.15);
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.vpn-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.vpn-banner button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  padding: 0.2rem 0.5rem;
+}
+
+.vpn-banner button:hover {
+  opacity: 1;
+}
+
 /* Utilities */
 .container {
   max-width: var(--container);
