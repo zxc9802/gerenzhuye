@@ -1,4 +1,41 @@
 window.DETAIL_DATA = {
+  "web-manju": {
+    category: "网站代表作品",
+    title: "AI 漫画工坊",
+    tagline: "AI 一键生成分镜、配图、配音、视频 —— 从灵感到成片",
+    status: "V1.0 · 已上线",
+    source: "来源：README(AI漫画工坊).md",
+    specialNote:
+      "因服务器部署在海外，建议使用 VPN 访问以获得更流畅的浏览体验。",
+    repoUrl: "https://github.com/zxc9802/AI-manju.git",
+    siteUrl: "https://manju.qyaijingxuan.top/",
+    summary:
+      "AI 驱动的漫剧创作平台，用户只需输入一个主题，即可自动生成完整的漫剧作品，涵盖剧本、角色配图、语音合成和视频输出。",
+    positioning:
+      "平台整合了 AI 剧本生成、角色设计、场景配图、语音合成和视频生成等能力，实现从创意到成品的全流程自动化。",
+    modules: [
+      "AI 剧本工坊：输入主题自动生成大纲、角色、场景与分集剧本",
+      "视觉工坊：为角色和场景自动生成漫画风格插画",
+      "成片工坊：将分镜合成为带配音的短视频",
+      "AI 助手：实时对话讨论剧情、优化台词",
+      "项目管理：多项目云端存储与自动封面生成",
+      "用户系统：邮箱验证码注册登录，数据隔离"
+    ],
+    flow: [
+      "输入创作主题与风格偏好",
+      "AI 自动生成剧本大纲与分镜脚本",
+      "为每个分镜生成角色与场景配图",
+      "合成配音并生成最终视频",
+      "导出成品或继续迭代优化"
+    ],
+    stack: [
+      "前端：Next.js 16 + React 19 + Framer Motion",
+      "后端：Next.js API Routes",
+      "AI 模型：Google Gemini（文本 + 图像）+ 阿里通义千问（语音 + 视频）",
+      "数据库：Supabase（PostgreSQL + Auth + RLS）",
+      "部署：Vercel"
+    ]
+  },
   "web-realstate": {
     category: "网站代表作品",
     title: "RealState AI 售房网站",
@@ -17,7 +54,9 @@ window.DETAIL_DATA = {
       "卖点挖掘：自动生成核心卖点与销售话术",
       "多平台文案：贝壳版 / 小红书版 / 朋友圈版",
       "户型图分析 + 软装建议 + 风格化改造剧本",
-      "积分体系与卡密兑换机制"
+      "积分体系与卡密兑换机制",
+      "完整的登录、注册功能",
+      "历史记录功能"
     ],
     flow: [
       "上传房源照片或户型图并填写核心参数",
@@ -40,6 +79,8 @@ window.DETAIL_DATA = {
     tagline: "长文一键转小红书分段文案 + 每段配图",
     status: "MVP 方案 C · 已确认",
     source: "来源：Prd（小红书文生图网站）.md",
+    specialNote:
+      "因服务器部署在海外，建议使用 VPN 访问以获得更流畅的浏览体验。",
     repoUrl: "https://github.com/zxc9802/xiaohongshu.git",
     siteUrl: "https://xiaohongshu.qyaijingxuan.top/",
     summary:
@@ -176,6 +217,8 @@ window.DETAIL_DATA = {
     tagline: "自动抓取、分析并生成 HTML 报告",
     status: "自动化工作流",
     source: "来源：README(微信群聊总结）.md",
+    specialNote:
+      "因服务器部署在海外，建议使用 VPN 访问以获得更流畅的浏览体验。",
     repoUrl: "https://github.com/zxc9802/weixinqunliao.git",
     siteUrl: "https://abc.qyaijingxuan.top/",
     summary:
@@ -238,6 +281,8 @@ window.DETAIL_DATA = {
     tagline: "抓取、转录、改写、同步的内容流水线",
     status: "自动化系统",
     source: "来源：README（youtube博客skill).md",
+    specialNote:
+      "因服务器部署在海外，建议使用 VPN 访问以获得更流畅的浏览体验。",
     repoUrl: "https://github.com/zxc9802/aijingxuan",
     siteUrl: null,
     summary:
