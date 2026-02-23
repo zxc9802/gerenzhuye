@@ -284,7 +284,7 @@ window.DETAIL_DATA = {
     specialNote:
       "因服务器部署在海外，建议使用 VPN 访问以获得更流畅的浏览体验。",
     repoUrl: "https://github.com/zxc9802/aijingxuan",
-    siteUrl: null,
+    siteUrl: "https://www.qyaijingxuan.top/",
     summary:
       "从 YouTube 频道批量发现新视频，自动完成转录与 AI 改写，并同步到飞书与博客站点。",
     positioning:
